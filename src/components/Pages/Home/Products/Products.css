@@ -1,0 +1,24 @@
+.products .heading{
+    position: relative;
+}
+.products .heading::before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -40px;
+    width: 80%;
+    height: 3px;
+    background-color: black;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.products .content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding-top: 50px;
+}

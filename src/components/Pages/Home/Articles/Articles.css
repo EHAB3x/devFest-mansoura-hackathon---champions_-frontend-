@@ -1,0 +1,21 @@
+.heading{
+        font-size: 32px;
+        line-height: 24px;
+        letter-spacing: 5px;
+        margin: 50px 0;
+}
+.articles{
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: #C8DBE1;
+}
+.articles .content{
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
