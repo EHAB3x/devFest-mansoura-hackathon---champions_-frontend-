@@ -2,6 +2,7 @@
 import { Route, Routes } from 'react-router-dom';
 import Header from './components/main components/Navbar/Header';
 import Landing from './components/Pages/Home/Landing/Landing';
+import About from './components/Pages/Home/About/About';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Route path='/' element={
           <>
           <Landing />
+          <About />
           </>
         }></Route>
       </Routes>
