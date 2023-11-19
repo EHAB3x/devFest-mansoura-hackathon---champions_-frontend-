@@ -27,7 +27,7 @@ const Header = () => {
         "Profile"
       ];
   return (
-    <Navbar onMenuOpenChange={setIsMenuOpen}>
+    <Navbar className='head' onMenuOpenChange={setIsMenuOpen}>
       <NavbarContent>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}

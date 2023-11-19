@@ -2,7 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&display=swap');
 nav{
     justify-content: space-between;
-    padding-top:1rem ;      
+    padding-top:1rem ;  
+}
+.head{
+    position: absolute;
+    background-color: transparent;
 }
 nav header{
     max-width: 100% !important;
