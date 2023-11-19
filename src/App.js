@@ -5,6 +5,8 @@ import Landing from './components/Pages/Home/Landing/Landing';
 import About from './components/Pages/Home/About/About';
 import Articles from './components/Pages/Home/Articles/Articles';
 import Products from './components/Pages/Home/Products/Products';
+import Footer from './components/main components/Footer/Footer';
+import Login from './components/Pages/Login/Login';
 
 function App() {
   return (
@@ -19,7 +21,10 @@ function App() {
           <Products />
           </>
         }></Route>
+
+        <Route path='signin' element={<Login />}></Route>
       </Routes>
+      <Footer />
     </>
   );
 }

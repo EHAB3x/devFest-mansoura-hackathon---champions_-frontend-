@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&display=swap');
+footer{
+    background-color: #F9F3F3;
+    padding: 80px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer .left .heros{
+    font-size: 100px;
+    position: relative;
+    padding: 0 25px;
+    line-height: 24px;
+    color: #B84803;
+    font-family: 'Corinthia', cursive;
+}
+footer .left .heros::before{
+    content: "He";
+    font-size: 30px;
+    line-height: 24px;
+    position: absolute;
+    top: 0%;
+    left: -14%;
+    color: #022F52;
+    font-weight: 400;
+    font-family: 'Fredericka the Great', serif;
+}
+footer .left .heros::after{
+    content: "oes";
+    font-size: 30px;
+    line-height: 24px;
+    position: absolute;
+    bottom: 35%;
+    right: -25%;
+    color: #022F52;
+    font-weight: 400;
+    font-family: 'Fredericka the Great', serif;
+}
+
+footer .right .location,
+footer .right .phone,
+footer .right .email,
+footer .right .social{
+    display: flex;
+    margin-bottom: 25px;
+    font-weight: 400;
+}
+
+footer .right .location svg,
+footer .right .phone svg,
+footer .right .email svg,
+footer .right .social svg{
+    color: #0081FE;
+    margin-right: 15px;
+}

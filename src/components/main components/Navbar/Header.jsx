@@ -8,7 +8,8 @@ import {
     NavbarMenu,
     NavbarMenuItem,
     Link,
-    Button
+    Button,
+    link
   } from "@nextui-org/react";
   import './Header.css'
 import { NavLink } from 'react-router-dom';
@@ -34,7 +35,7 @@ const Header = () => {
           className="more"
         />
         <NavbarBrand className='justify-center'>
-          <p className="font-bold text-inherit heros">R</p>
+          <NavLink to={'/'} className="font-bold text-inherit heros">R</NavLink>
         </NavbarBrand>
       </NavbarContent>
 
@@ -76,6 +77,8 @@ const Header = () => {
           <Button as={NavLink} style={{color:"white",backgroundColor:"red"}} to={'/emergency'} variant="flat">
             Emergency
           </Button>
+
+          <Button as={NavLink}  color='secondary' to={'/signin'}>Sign in</Button>
 
         </NavbarItem>
       </NavbarContent>

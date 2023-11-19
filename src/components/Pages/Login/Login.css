@@ -1,0 +1,126 @@
+.signin{
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.signin .circle{
+    display: block;
+    width: 300px;
+    height: 300px;
+    background-color:#f9f3f3;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: absolute;
+    border: 2px dashed var(--main-color);
+    z-index: -1;
+}
+.signin .circle1{
+    top: -100px;
+    right: -100px;
+}
+.signin .circle2{
+    bottom: -100px;
+    left: -100px;
+}
+
+.signin form{
+    text-align: center;
+    max-width: 100%;
+    color: black;
+    text-transform: uppercase;
+    font-size:larger;
+    align-items: center;
+    margin: auto;
+    position: relative;
+}
+.signin form::before{
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-color: #f9f3f3;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    z-index: -1;
+    border: 2px dashed var(--main-color);
+    stroke-dashoffset: 10px;
+    stroke-dasharray:10 ,10;
+}
+.signin form div{
+    display: flex;
+    flex-direction: column;
+}
+
+.signin form .container{
+    padding-bottom: 1rem;
+}
+.signin form .quote{
+    color: #777;
+    text-transform: lowercase;
+    font-size: 16px; 
+}
+.signin form label{
+    color: #777;
+    text-align: start;
+    margin: 10px 0;
+    font-size: 14px;
+}
+.signin form #form2Example1,
+.signin form #form2Example2{
+    border-style: solid;
+    border-color: rgb(0, 140, 255);
+    background:none;
+    border-radius: 2rem;
+    padding: 1rem 7rem 1rem 10px;
+    font-size: 16px;
+    outline: none;
+}
+.signin form .form-check{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row-reverse;
+} 
+.signin form .button{
+    padding: 8px 16px;
+    background-color: rgb(0, 140, 255);
+    border-style: solid;
+    font-size: 15px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    color: white;
+    margin-bottom: 10px;
+}
+#forget{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: rgb(0, 140, 255);
+    font-size: 13px;
+}
+#new{
+    font-size: 13px;
+}
+@media screen and (max-width:768px){
+    .signin .circle{
+        display: none;
+    }
+}
