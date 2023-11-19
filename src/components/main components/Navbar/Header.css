@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&display=swap');
+nav{
+    justify-content: space-between;
+    padding-top:1rem ;      
+}
+nav header{
+    max-width: 100% !important;
+}
+nav header .heros{
+    font-size: 60px;
+    position: relative;
+    padding: 0 25px;
+    line-height: 24px;
+    color: #B84803;
+    font-family: 'Corinthia', cursive;
+}
+nav header .heros::before{
+    content: "He";
+    font-size: 30px;
+    line-height: 24px;
+    position: absolute;
+    top: -90%;
+    left: -20%;
+    color: #022F52;
+    font-weight: 400;
+    font-family: 'Fredericka the Great', serif;
+}
+nav header .heros::after{
+    content: "oes";
+    font-size: 30px;
+    line-height: 24px;
+    position: absolute;
+    bottom: -0%;
+    right: -25%;
+    color: #022F52;
+    font-weight: 400;
+    font-family: 'Fredericka the Great', serif;
+}
+nav header .more{
+    display: none;
+}
+nav header .always_show{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+@media screen and (max-width : 768px) {
+    nav header .more{
+        display: unset;
+    }
+    nav header .content{
+        display: none;
+    }
+}
